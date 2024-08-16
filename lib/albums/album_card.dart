@@ -48,6 +48,7 @@ class _AlbumCardState extends State<AlbumCard> {
         child: FutureBuilder(
           future: future,
           builder: (context, snapshot) {
+            debugPrint('snapshot: $snapshot');
             if (snapshot.data?.baseUrl case final baseUrl?) {
               return Ink.image(
                 image: NetworkImage(
